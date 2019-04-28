@@ -1,0 +1,23 @@
+<TABLE BORDER=1>
+<TR><TH>Department</TH></TR>
+<TMPL_LOOP NAME="deptable">
+<TR><TD><TMPL_VAR NAME="dept_name"></TD></TR>
+</TMPL_LOOP>
+</TABLE>
+<br>
+<form method="POST" action="employee.php">
+<select name="employee">
+  <option value="d009">Customer Service</option>
+  <option value="d005">Development</option>
+  <option value="d002">Finance</option>
+  <option value="d003">Human Resources</option>
+  <option value="d001">Marketing</option>
+  <option value="d004">Production</option>
+  <option value="d006">Quality Management</option>
+  <option value="d008">Research</option>
+  <option value="d007">Sales</option>
+</select>
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>

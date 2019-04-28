@@ -1,0 +1,10 @@
+<form>
+  <button formaction="dept.php">Back</button>
+  <button formaction="index.html">Logout</button>
+</form>
+<TABLE BORDER=1>
+<TR><TH>Manager</TH><TH>Department Name</TH><TH>First Name</TH><TH>Last Name</TH><TH>Title</TH></TR>
+<TMPL_LOOP NAME="genlist">
+<TR><TD><TMPL_VAR NAME="emp_no"></TD><TD><TMPL_VAR NAME="dept_name"></TD><TD><TMPL_VAR NAME="first_name"></TD><TD><TMPL_VAR NAME="last_name"></TD><TD><TMPL_VAR NAME="title"></TD></TR>
+</TMPL_LOOP>
+</TABLE>
